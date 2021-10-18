@@ -1,14 +1,18 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
+import PokemonInfo from "./components/PokemonInfo";
 
 function App() {
+  const [pokemon, setPokemon] = useState("bulbasaur");
+  console.log("this is pokemon" + " " + pokemon);
+
   return (
     <div className="grid-container">
       <div className="grid-left">
-        <Navbar />
+        <Navbar setPokemon={setPokemon} />
       </div>
       <div className="grid-right">
-        <h1>wfmowemf9onwoiefniuwefniw efi</h1>
+        <PokemonInfo pokemon={pokemon} />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import React from "react";
-import pokeball from "../src/pokeball.png";
-import "./index.css";
+import pokeball from "../pokeball.png";
+import "../index.css";
 import NavbarList from "./NavbarList";
 
-function Navbar() {
+function Navbar({ setPokemon }) {
   return (
     <div className="sidebar">
       <div className="sidebar-heading">
@@ -17,7 +17,7 @@ function Navbar() {
       </div>
       <hr style={{ width: "70%", margin: "35px auto 0 auto" }} />
 
-      <NavbarList />
+      <NavbarList setPokemon={setPokemon} />
     </div>
   );
 }
