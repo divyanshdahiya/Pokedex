@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
-import PokemonInfo from "./components/PokemonInfo";
+import PokemonInfoSection from "./components/PokemonInfoSection";
 
 function App() {
   const [pokemon, setPokemon] = useState("bulbasaur");
@@ -12,7 +12,7 @@ function App() {
         <Navbar setPokemon={setPokemon} />
       </div>
       <div className="grid-right">
-        <PokemonInfo pokemon={pokemon} />
+        <PokemonInfoSection pokemon={pokemon} />
       </div>
     </div>
   );
