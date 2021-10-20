@@ -8,7 +8,7 @@ function NavbarList({ setPokemon }) {
 
   useEffect(() => {
     async function getData() {
-      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=60`);
+      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=5`);
       // console.log(res.data);
       setpokemonList(res.data.results.map((p) => p.name));
     }
