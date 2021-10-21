@@ -37,34 +37,53 @@ function PokemonInfoSection({ pokemon }) {
   return (
     <div>
       <h1 className="poke-heading">{pokemon}</h1>
-      <img src={pokemonInfo.image} alt="pokemon-logo" className="poke-image" />
+      <div className="poke-section">
+        <div className="poke-left">
+          <img
+            src={pokemonInfo.image}
+            alt="pokemon-logo"
+            className="poke-image"
+          />
+          <div className="poke-info-container">
+            <div className="poke-info">
+              <h2>Pokemon Experience -</h2>
+              <h2> {pokemonInfo.experience}</h2>
+            </div>
+            <div className="poke-info">
+              <h2>Pokemon weight -</h2>
+              <h2>{pokemonInfo.weight} kg</h2>
+            </div>
+            <div className="poke-info">
+              <h2>Pokemon Height -</h2>
+              <h2>{pokemonInfo.height} m</h2>
+            </div>
+          </div>
+          <div className="poke-info">
+            <h2>Abilities - </h2>
+            <div className="ability-items">
+              <h2>1. {pokemonInfo.ability1}</h2>
+              <h2>2. {pokemonInfo.ability2}</h2>
+            </div>
+          </div>
+          <div className="poke-info">
+            <h2>Moves - </h2>
+            <div className="ability-items">
+              <h2>1. {pokemonInfo.move1}</h2>
+              <h2>2. {pokemonInfo.move2}</h2>
+              <h2>3. {pokemonInfo.move3}</h2>
+            </div>
+          </div>
+        </div>
 
-      <div className="poke-info-container">
-        <div className="poke-info">
-          <h2>Pokemon Experience -</h2>
-          <h2> {pokemonInfo.experience}</h2>
-        </div>
-        <div className="poke-info">
-          <h2>Pokemon weight -</h2>
-          <h2>{pokemonInfo.weight} kg</h2>
-        </div>
-        <div className="poke-info">
-          <h2>Pokemon Height -</h2>
-          <h2>{pokemonInfo.height} m</h2>
+        <div className="poke-right">
+          <h2>{pokemonInfo.hp}</h2>
+          <h2>{pokemonInfo.attack}</h2>
+          <h2>{pokemonInfo.defence}</h2>
+          <h2>{pokemonInfo.special_attack}</h2>
+          <h2>{pokemonInfo.special_defence}</h2>
+          <h2>{pokemonInfo.speed}</h2>
         </div>
       </div>
-
-      <h2>{pokemonInfo.ability1}</h2>
-      <h2>{pokemonInfo.ability2}</h2>
-      <h2>{pokemonInfo.move1}</h2>
-      <h2>{pokemonInfo.move2}</h2>
-      <h2>{pokemonInfo.move3}</h2>
-      <h2>{pokemonInfo.hp}</h2>
-      <h2>{pokemonInfo.attack}</h2>
-      <h2>{pokemonInfo.defence}</h2>
-      <h2>{pokemonInfo.special_attack}</h2>
-      <h2>{pokemonInfo.special_defence}</h2>
-      <h2>{pokemonInfo.speed}</h2>
     </div>
   );
 }

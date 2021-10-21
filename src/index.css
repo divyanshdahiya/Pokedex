@@ -82,24 +82,39 @@ body {
   font-size: 80px;
   text-transform: capitalize;
   letter-spacing: 4px;
+  text-align: center;
+  background-color: #29282d9f;
+  margin-left: -40px;
+}
+.poke-section {
+  display: flex;
+}
+.poke-left {
+  width: 35%;
+  background-color: #9980ff32;
+  border-radius: 5%;
 }
 .poke-image {
   width: 300px;
-  background-color: #9f87ff;
   border-radius: 3%;
+  display: flex;
+  margin: 0px auto;
 }
 .poke-info-container {
-  background-color: #ff9090;
-  max-width: 27%;
+  background-color: #9980ff32;
   border-radius: 3%;
 }
 .poke-info {
   display: flex;
   align-items: center;
   margin: 10px 0;
-  padding: 5px 0 5px 15px;
+  padding: 5px 0 5px 20px;
 }
 .poke-info h2 {
   padding-right: 10px;
-  color: #fd3737;
+  color: #d7ceff;
+}
+.ability-items {
+  display: flex;
+  flex-direction: column;
 }
