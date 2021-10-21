@@ -16,6 +16,9 @@ body {
 .grid-left {
   word-wrap: break-word;
 }
+.grid-right {
+  padding-left: 40px;
+}
 
 /*///////////////////////////////////////////////////// SIDEBAR//////////////////////////////////////////// */
 .sidebar {
@@ -58,4 +61,45 @@ body {
 }
 .pokemon-list {
   overflow-y: scroll;
+  padding-top: 20px;
+}
+.pokemon-list-items li {
+  list-style: none;
+  font-size: 30px;
+  padding-left: 30px;
+  line-height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+.pokemon-list-items li:hover {
+  color: black;
+  background-color: white;
+}
+.poke-heading {
+  margin: 30px 0px;
+  font-size: 80px;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+}
+.poke-image {
+  width: 300px;
+  background-color: #9f87ff;
+  border-radius: 3%;
+}
+.poke-info-container {
+  background-color: #ff9090;
+  max-width: 27%;
+  border-radius: 3%;
+}
+.poke-info {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 5px 0 5px 15px;
+}
+.poke-info h2 {
+  padding-right: 10px;
+  color: #fd3737;
 }
