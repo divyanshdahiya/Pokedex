@@ -7,7 +7,7 @@
   font-family: "Roboto Mono", monospace;
 }
 body {
-  background-color: #16161d;
+  background-color: #59d0ff;
 }
 .grid-container {
   display: grid;
@@ -27,7 +27,7 @@ body {
   top: 0;
   height: 100%;
   width: 25%;
-  background: #29282d;
+  background: #c04c4b;
   padding: 50px 30px;
   z-index: 99;
   transition: all 0.5s ease;
@@ -62,6 +62,7 @@ body {
 .pokemon-list {
   overflow-y: scroll;
   padding-top: 20px;
+  max-height: 600px;
 }
 .pokemon-list-items li {
   list-style: none;
@@ -73,17 +74,24 @@ body {
   text-transform: capitalize;
   letter-spacing: 3px;
 }
+.pokemon-list-items li :checked {
+  color: purple;
+}
 .pokemon-list-items li:hover {
-  color: black;
-  background-color: white;
+  background-color: #e95f5d;
+  border-radius: 5%;
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.1);
+  transform: scale(1.04);
 }
 .poke-heading {
-  margin: 30px 0px;
+  margin: 0px 0px 30px 0;
+  padding: 20px;
   font-size: 80px;
   text-transform: capitalize;
   letter-spacing: 4px;
   text-align: center;
-  background-color: #29282d9f;
+  background-color: #30c3fd77;
   margin-left: -40px;
 }
 .poke-section {
@@ -91,8 +99,14 @@ body {
 }
 .poke-left {
   width: 35%;
-  background-color: #9980ff32;
+  background-color: #30c3fd77;
+  border: 2px solid #ffffff77;
   border-radius: 5%;
+}
+.poke-left:hover {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
 }
 .poke-image {
   width: 300px;
@@ -101,7 +115,6 @@ body {
   margin: 0px auto;
 }
 .poke-info-container {
-  background-color: #9980ff32;
   border-radius: 3%;
 }
 .poke-info {
@@ -112,7 +125,6 @@ body {
 }
 .poke-info h2 {
   padding-right: 10px;
-  color: #d7ceff;
 }
 .ability-items {
   display: flex;
