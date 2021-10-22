@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../index.css";
 import axios from "axios";
+import Chart from "./Chart";
 
 function PokemonInfoSection({ pokemon }) {
   const [pokemonInfo, setpokemonInfo] = useState({});
@@ -10,7 +11,7 @@ function PokemonInfoSection({ pokemon }) {
       const res = await axios.get(
         `https://pokeapi.co/api/v2/pokemon/${pokemon}`
       );
-      console.log(res.data.stats[5]);
+      console.log(res.data);
       // console.log(res.data.abilities[0].ability.name);
       // console.log(res.data.abilities[1].ability.name);
       setpokemonInfo({
@@ -25,7 +26,7 @@ function PokemonInfoSection({ pokemon }) {
         move3: res.data.moves[2].move.name,
         hp: res.data.stats[0].base_stat,
         attack: res.data.stats[1].base_stat,
-        defense: res.data.stats[2].base_stat,
+        defence: res.data.stats[2].base_stat,
         special_attack: res.data.stats[3].base_stat,
         special_defence: res.data.stats[4].base_stat,
         speed: res.data.stats[5].base_stat,
@@ -76,12 +77,7 @@ function PokemonInfoSection({ pokemon }) {
         </div>
 
         <div className="poke-right">
-          <h2>{pokemonInfo.hp}</h2>
-          <h2>{pokemonInfo.attack}</h2>
-          <h2>{pokemonInfo.defence}</h2>
-          <h2>{pokemonInfo.special_attack}</h2>
-          <h2>{pokemonInfo.special_defence}</h2>
-          <h2>{pokemonInfo.speed}</h2>
+          <Chart pokemonInfo={pokemonInfo} />
         </div>
       </div>
     </div>

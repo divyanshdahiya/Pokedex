@@ -56,7 +56,7 @@ body {
   width: 400px;
   color: black;
   padding: 30px;
-  border-radius: 50%;
+  border-radius: 50px;
   font-size: 20px;
 }
 .pokemon-list {
@@ -74,12 +74,12 @@ body {
   text-transform: capitalize;
   letter-spacing: 3px;
 }
-.pokemon-list-items li :checked {
+.pokemon-list-items li : {
   color: purple;
 }
 .pokemon-list-items li:hover {
   background-color: #e95f5d;
-  border-radius: 5%;
+  border-radius: 50px;
   -webkit-transform: scale(1.04);
   -ms-transform: scale(1.1);
   transform: scale(1.04);
@@ -129,4 +129,14 @@ body {
 .ability-items {
   display: flex;
   flex-direction: column;
+}
+.poke-right {
+  margin-left: 30px;
+}
+
+.chart {
+  background-color: #e1f3fa77;
+  border: 2px solid #ffffff77;
+  padding: 10px;
+  margin-top: 15px;
 }
