@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar";
 import PokemonInfoSection from "./components/PokemonInfoSection";
 
 function App() {
+  console.log("App created by Divyansh Dahiya");
   const [pokemon, setPokemon] = useState("bulbasaur");
-  console.log("this is pokemon" + " " + pokemon);
 
   return (
     <div className="grid-container">

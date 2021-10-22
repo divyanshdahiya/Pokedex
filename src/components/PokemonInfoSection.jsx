@@ -11,9 +11,6 @@ function PokemonInfoSection({ pokemon }) {
       const res = await axios.get(
         `https://pokeapi.co/api/v2/pokemon/${pokemon}`
       );
-      console.log(res.data);
-      // console.log(res.data.abilities[0].ability.name);
-      // console.log(res.data.abilities[1].ability.name);
       setpokemonInfo({
         image: res.data.sprites.front_default,
         experience: res.data.base_experience,
