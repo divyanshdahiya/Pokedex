@@ -1,3 +1,5 @@
+<img src="capture.PNG" alt="Website preview" style="height: 500px; width:1000px;"/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
