@@ -1,5 +1,5 @@
 ### It is a website that uses Pokémon API and the show information about the particular Pokémon
-### Tech Used - React.JS, Pokémon API, Charts.Js
+### Tech Used - React.Js, Pokemon API, Charts.Js
 
 <img src="capture.PNG" alt="Website preview" style="height: 450px; width:1000px;"/>
 
